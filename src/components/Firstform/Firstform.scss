@@ -1,0 +1,32 @@
+.firstform {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__area {
+        margin-top: 1em;
+        width: 90%;
+        height: 100px;
+    }
+    &__underarea {
+        margin-top: 0.5em;
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+}
+
+span {
+    font-weight: bold;
+}
+
+
+@media (min-width: 576px) {
+    .firstform {
+        &__underarea {
+            font-size: 2.5rem;
+        }
+    }
+}
