@@ -1,3 +1,5 @@
+// Form -all 
+
 .form {
     position: relative;
     width: 100vw;
@@ -6,11 +8,163 @@
     justify-content: center;
     align-items: center;
     &__wrapper {
+        position: relative;
         width: 80%;
         min-height: 450px;
         border-radius: 16px;
         border: 1px solid gold;
        
     }
+}
+
+
+@media (min-width: 576px) {
+    .form {
+        &__wrapper {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        &__wrapper {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .form {
+        &__wrapper {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .form {
+        &__wrapper {
+            width: 40%;
+        }
+    }
+}
+
+// First input
+.firstform {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__area {
+        margin-top: 1em;
+        width: 90%;
+        height: 100px;
+    }
+    &__underarea {
+        margin-top: 0.5em;
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+}
+
+span {
+    font-weight: bold;
+}
+
+
+@media (min-width: 576px) {
+    .firstform {
+        &__underarea {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .firstform {
+        &__underarea {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+// Second input
+.secondform {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+    &__radio {
+        margin-top: 3em;
+        width: 90%;
+    }
+}
+
+// Third, Fourth, Fifth input
+.thirdform, .fourthform, .fifthform {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     &__vat {
+        margin-top: 1em;
+        width: 90%;
+     }
+}
+
+
+.fourthform {
+     &__inputEur {
+        margin-top: 2em;
+        width: 90%;
+     }
+     &__numberText {
+      margin-top: 1em;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: red;
+      text-align: center;
+     }
+}
+
+.fifthform {
+   &__inputEurbrutto {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 90%;
+   }
+}
+
+.sixthform {
+   position: absolute;
+   bottom: 4%;
+   right: 4%;
+}
+
+
+@media (min-width: 576px) {
+   
+.fourthform {
+    
+    &__numberText {
+     font-size: 2.5rem;
+    }
+}
+}
+
+.textareaerror {
+    font-weight: bold;
+    color: red;
+    text-align: center;
 }
 
